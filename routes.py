@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Path, Query
-from .models import StudentCreate, StudentUpdate, StudentData
-from .database import students_collection
+from models import StudentCreate, StudentUpdate, StudentData
+from database import students_collection
 from bson import ObjectId
 
 router = APIRouter(prefix="/students", tags=["Students"])
